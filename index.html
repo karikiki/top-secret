@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>oii</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap">
+    <style>
+        body {
+            font-family: 'Amatic SC', cursive;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            background-color: #f7d8e9;
+        }
+        
+        h1 {
+            font-family: 'Great Vibes', cursive;
+            color: #ff69b4;
+            margin-bottom: 20px;
+            font-size: 10vw;
+        }
+        
+        h2 {
+            font-family: 'Amatic SC', cursive;
+            margin-bottom: 20px;
+            font-size: 6vw;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-wrap: wrap;
+        }
+        
+        .column {
+            width: calc(100% / 1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .image {
+            width: 100%;
+            max-width: 850px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        
+        p {
+            margin-bottom: 10px;
+            font-size: 6vw;
+        }
+        
+        @media (max-width: 768px) {
+            .column {
+                width: 100%;
+            }
+        }
+        
+        .spacer {
+            height: 1000px; /* ajuste o valor conforme necessário */
+        }
+
+        .botoes {
+            margin-top: 2vw; /* Ajusta a margem superior em relação à largura da viewport */
+            text-align: center; /* Centraliza horizontalmente os botões */
+        }
+
+        .botoes button {
+            display: block; /* Altera para display block para que fiquem um em cima do outro */
+            margin: 1vw auto; /* Centraliza horizontalmente os botões e define a margem em relação à largura da viewport */
+            background-color: black;
+            border: 6px solid #ff6ec7;
+            color: white;
+            padding: 4vw 6vw; /* Define o padding em relação à largura da viewport */
+            border-radius: 15px;
+            margin-bottom: 1vw; /* Adiciona margem inferior para separação entre os botões em relação à largura da viewport */
+            font-size: 3vw;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Oii ‎ Rocio Mabel ♡</h1>
+    
+    <div class="container">
+        <div class="column">
+            <img src="i1.png" alt="Imagem 1" class="image">
+            <div class="spacer"></div>
+            <img src="i2.png" alt="Imagem 2" class="image">
+        </div>
+        <div class="column">
+            <img src="i3.png" alt="Imagem 3" class="image">
+            <img src="i4.png" alt="Imagem 4" class="image">
+        </div>
+        <div class="column">
+            <img src="i5.png" alt="Imagem 5" class="image">
+            <img src="i6.png" alt="Imagem 6" class="image">
+        </div>
+    </div>
+    <h2>Espero que tenha gostado da surpresa, clique no botão 'Avançar' para continuar... ♡</h2>
+    <div class="botoes">
+        <button onclick="avancarPagina()">Avançar</button>
+    </div>
+    
+        <script src="script.js"></script>
+    <script>
+        function avancarPagina() {
+     window.location.href = "pagina2.html"; 
+        }
+    </script>
+</body>
+</html>
